@@ -1,0 +1,4 @@
+<p>student works!</p>  
+<app-studentdetails *ngFor = 'let item of student' [student]= "item" (adding)= "getStudent($event)" (update)="onUpdate($event)" (remove)="onRemove($event)" ></app-studentdetails>
+
+<!--  -->

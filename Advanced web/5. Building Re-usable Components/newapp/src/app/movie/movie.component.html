@@ -1,0 +1,12 @@
+<p>movie works!</p> 
+<app-movieitem *ngFor= ' let film of movie' [movie] = 'film' (adding)="addWatchList($event)"  (remove) =" onRemove($event)"></app-movieitem> 
+<app-watchlist [watchlist]='filmarray'></app-watchlist> 
+<button (click)='Toggle()'>display details</button> 
+<p *ngIf='isactivated == true'> new paragraph</p> 
+<div 
+*ngFor= 'let counter of counterarray'
+[ngClass]= "{'white-color': counter >=5}" 
+[ngStyle]= "{backgroundColor:counter >=5 ? 'blue' : 'transparent'}"
+> 
+{{counter}}
+</div> 
